@@ -12,15 +12,17 @@ function ExpenseItem(props) {
     // but we can build such reusable wrapper components (see Card.js)
     // <div className="expense-item">
     // className on Card acts like a custom attribute r/t standard className attribute used to set classes
-    <Card className="expense-item">
-      {/* <div>{props.date.toISOString()}</div> */}
-      <ExpenseDate date={props.date} />
-      <div className="expense-item__description">
-        <h2>{props.title}</h2>
-        <div className="expense-item__price">${props.amount}</div>
-      </div>
-      {/* </div> */}
-    </Card>
+    <li>
+      <Card className="expense-item">
+        {/* <div>{props.date.toISOString()}</div> */}
+        <ExpenseDate date={props.date} />
+        <div className="expense-item__description">
+          <h2>{props.title}</h2>
+          <div className="expense-item__price">${props.amount}</div>
+        </div>
+        {/* </div> */}
+      </Card>
+    </li>
   );
 }
 

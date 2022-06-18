@@ -15,7 +15,7 @@ function Card(props) {
   // The content shows up but its broken
   // because some of the styles does not apply as Card(custom component) does not support className
   // All the default components support className for adding css classes to the rendered html elements
-  // Custom components only support that we tell them to support
+  //  but Custom components only support that we tell them to support
   // So we want to make sure that a className can be set on the Card component
   // We want to add whatever is set as a className
   // to the Card to the 'card' string set as a className on the div returned from this component
